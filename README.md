@@ -54,4 +54,4 @@ The algorithm parses the input expression, converts it to a postfix notation, an
 
 ## Screen Capture for Demonstrating Calculator
 
-https://github.com/Rushikesh1234/Fetch_Rewards_Coding_Exercise/assets/38386736/adde92ac-7904-4758-ad11-15c63f01cebd
+https://github.com/Rushikesh1234/calculators/assets/38386736/b2058c9f-aac2-4aa2-8531-be06835606a9
