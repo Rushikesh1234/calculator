@@ -1,49 +1,57 @@
 # Calculator
 
 ## Overview
-This repository contains the solution for the Fetch Coding Exercise - SDET, where the task is to find a fake gold bar among 9 bars using a balance scale simulation provided on the [Fetch SDET Challenge website](http://sdetchallenge.fetch.com/).
+A simple calculator web application built with React.
 
 ## Getting Started
 
+### Features
+* Basic arithmetic operations (addition, subtraction, multiplication, division)
+* Parentheses support
+* Clear and backspace functionality
+* Responsive design
+
 ### Requirements
 * Node.js
-* Selenium WebDriver
-* Chrome Browser (or other supported browser)
 
 ### Setup
 * Install Node.js: [Node.js Download](https://nodejs.org/en)
-* Install Selenium WebDriver: [Selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver)
-* Install Chrome Browser: [Chrome Download](https://www.google.com/chrome/)
 
 ### Running the Code
 * Clone the repository:
 ```
-git clone https://github.com/Rushikesh1234/Fetch_Rewards_Coding_Exercise.git
+git clone https://github.com/Rushikesh1234/calculators.git
 ```
 * Navigate to the project directory:
 ```
-cd Fetch_Rewards_Coding_Exercise
+cd calculators
 ```
-* Run the code:
+* Install dependencies:
 ```
-node index.js
+npm install
+```
+* Run the application locally:
+```
+npm start
 ```
 
-### Code Structure
-* **goldBarWeighingChallenge.js:** Main JavaScript file containing the solution.
-* **selenium-webdriver:** Dependency for handling browser automation.
+### Technologies Used
+* React
+* JavaScript
+
+### Code Structure / Flow
+* **Input Handling**: User input is captured when buttons are clicked.
+* **Expression Evaluation**: The input expression is sanitized and evaluated using a custom expression parser.
+* **Arithmetic Operations**: Basic arithmetic operations (+, -, *, /) are supported.
+* **Parentheses Support**: The calculator respects the order of operations, including parentheses.
+* **Clear and Backspace**: Buttons allow clearing the entire input or removing the last character.
+* **Responsive Design**: The calculator adapts to different screen sizes for a consistent user experience.
 
 ### Algorithm
-The solution uses a divide and conquer algorithm to identify the fake gold bar with the minimum number of weighings. The process involves simulating the weighing steps on the provided website.
+The calculator utilizes a stack-based algorithm to evaluate mathematical expressions. It follows the order of operations (PEMDAS/BODMAS) and supports parentheses for prioritizing calculations.
 
-### Testing
-* Automated tests have been implemented to verify the functionality of the code. The tests cover:
-* Clicking on buttons ("Weigh", "Reset").
-* Retrieving measurement results.
-* Fill out the bowls grids with bar numbers (0 to 8).
-* Getting a list of weighings.
-* Clicking on the gold bar number at the bottom of the website and checking for the alert message.
+The algorithm parses the input expression, converts it to a postfix notation, and then evaluates the expression using a stack.
 
-## Screen Capture for Demonstrating Automation Scripts
+## Screen Capture for Demonstrating Calculator
 
 https://github.com/Rushikesh1234/Fetch_Rewards_Coding_Exercise/assets/38386736/adde92ac-7904-4758-ad11-15c63f01cebd
